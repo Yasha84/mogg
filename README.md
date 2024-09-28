@@ -1,2 +1,1 @@
-[a
-](https://yasha84.github.io/mogg/)
+https://yasha84.github.io/mogg/
