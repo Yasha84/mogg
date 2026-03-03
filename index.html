@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base target="_top">
-     <link rel="stylesheet" href="style.css">
-  </head>
-  <style>
-    a{
-      font-size:70px;
-    }
-    </style>
 
-  <body>
+<head>
+    <base target="_top">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    a {
+        font-size: 70px;
+    }
+</style>
+
+<body>
+
+    <!-- キッチンIDジャンプ -->
+    <input type="number" id="kitchenId" placeholder="キッチンID入力" style="font-size:80px; width:600px; height:120px;">
+
+    <button onclick="goKitchen()" style="font-size:80px; width:300px; height:120px;">
+        移動
+    </button>
+
+    <script>
+        function goKitchen() {
+            const id = document.getElementById("kitchenId").value;
+            if (!id) {
+                alert("IDを入力してください");
+                return;
+            }
+            const url = "https://s.mogg.ameba.jp/kitchen/" + id + "/kitchen";
+            window.location.href = url;
+        }
+    </script>
+
+    <br><br>
+
     <!-- いろはの庭 -->
     <a href="https://s.mogg.ameba.jp/petfarm/">いろはの庭</a><br>
     <!-- 加工調理キッチン -->
@@ -33,7 +56,7 @@
     <a href="https://s.mogg.ameba.jp/petfarm/gacha/">ガチャ</a><br>
     <!-- 倉庫 -->
     <a href="https://s.mogg.ameba.jp/petfarm/cart/warehouse">倉庫</a><br>
-     <!-- 置物 -->
+    <!-- 置物 -->
     <a href="https://s.mogg.ameba.jp/petfarm/ornament">置物</a><br>
     <!-- 釣り -->
     <a href="https://s.mogg.ameba.jp/petfarm/fishing/">釣り</a><br>
@@ -46,7 +69,7 @@
     <!-- お買い物 -->
     <a href="https://s.mogg.ameba.jp/petfarm/shop/">お買い物</a><br>
     <!-- チャージ -->
-    <a href="https://s.mogg.ameba.jp/petfarm/shop/chargeMoneyConfirm">  チャージ   </a><br>
+    <a href="https://s.mogg.ameba.jp/petfarm/shop/chargeMoneyConfirm"> チャージ </a><br>
     <!-- ミニゲーム -->
     <a href="https://s.mogg.ameba.jp/petRun/gameSquare">ミニゲーム</a><br>
     <!-- 引換所 -->
@@ -60,5 +83,6 @@
     <!-- ドッジボール -->
     <a href="https://yasha84.github.io/dodgeball/">ドッジボール</a>
 
-  </body>
+</body>
+
 </html>
